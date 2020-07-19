@@ -1159,7 +1159,7 @@ section ul li{
     border-radius:20px;
     padding: 5px !important;
     min-height: 250px;min-width: 150px;
-    background: url('/content/images/loader_background_mobile.png?v=1.0');
+    background: url('/content/images/loader_background_mobile.png?v=1.22');
     background-size: cover;
 	  
   }
