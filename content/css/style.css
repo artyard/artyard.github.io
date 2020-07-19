@@ -614,11 +614,12 @@ section ul li{
 
 
 
-.gallery .carowsel-items{
+.gallery .carowsel-items
+{
   border:2px solid #ffffff;
   border-radius:20px;
   padding: 12px !important;
-  min-height: 280px;min-width: 200px;
+  min-height: 280px;min-width: 286px;
   background: url('/content/images/loader_background.png');
   background-size: cover;	
 }
