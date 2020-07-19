@@ -623,7 +623,7 @@ section ul li{
   background-size: cover;	
 }
 .gallery .carowsel-items img{
-  background-image: url('/content/images/img_loader.gif');
+  /*background-image: url('/content/images/img_loader.gif');*/
   min-height: 280px;
   width:auto;
   max-height: 280px; width: auto;
