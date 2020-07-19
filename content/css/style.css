@@ -620,7 +620,7 @@ section ul li{
   border-radius:20px;
   padding: 12px !important;
   min-height: 280px;min-width: 286px;
-  background: url('/content/images/loader_background.png');
+  background: url('/content/images/loader_background.png?v=1.0');
   background-size: cover;	
 }
 .gallery .carowsel-items img{
@@ -1159,6 +1159,9 @@ section ul li{
     border-radius:20px;
     padding: 5px !important;
     min-height: 250px;min-width: 150px;
+    background: url('/content/images/loader_background_mobile.png?v=1.0');
+    background-size: cover;
+	  
   }
   .gallery .carowsel-items img{
     background-image: url('/content/images/img_loader.gif');
