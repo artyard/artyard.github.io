@@ -619,6 +619,8 @@ section ul li{
   border-radius:20px;
   padding: 12px !important;
   min-height: 280px;min-width: 200px;
+  background: url('/content/images/loader.gif'');
+   background-size: cover;	
 }
 .gallery .carowsel-items img{
   background-image: url('/content/images/img_loader.gif');
