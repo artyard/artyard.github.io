@@ -340,15 +340,212 @@ app.controller('baseCtrl', function($scope,$http) {
 
 
 
+  //  function GetFilenames(paramname,how_many){
+  //    var arr = [];
+  //    for(i=1;i<=how_many;i++){
+  //      var obj = {};
+  //      obj.Img_name = paramname+'/'+paramname+i+'.jpg';
+  //      arr.push(obj);
+  //    }
+  //    return JSON.parse(JSON.stringify(arr));
+  //  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    function GetFilenames(paramname,how_many){
-     var arr = [];
-     for(i=1;i<=how_many;i++){
-       var obj = {};
-       obj.Img_name = paramname+'/'+paramname+i+'.jpg';
-       arr.push(obj);
-     }
-     return JSON.parse(JSON.stringify(arr));
-   }
+     
+    var arr = [];
+    if(paramname=="pencilandcharcoalportrait"){
+      arr=[
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportrait1.jpg"},
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportrait2.jpg"},
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportraitfamily.jpg"},
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportraitgirl.jpg"},
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportrait3.jpg"},
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportrait4.jpg"},
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportrait5.jpg"},
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportrait6.jpg"},
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportrait7.jpg"},
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportrait8.jpg"},
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportrait9.jpg"},
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportrait10.jpg"},
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportrait11.jpg"},
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportrait12.jpg"},
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportrait13.jpg"},
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportrait14.jpg"},
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportrait15.jpg"},
+        {"Img_name":"pencilandcharcoalportrait/pencilandcharcoalportrait16.jpg"}
+      ]
+    }
+    else if(paramname=="acrylicoilportrait"){
+      arr=[
+        {"Img_name":"acrylicoilportrait/acrylicoilportrait1.jpg"},
+        {"Img_name":"acrylicoilportrait/acrylicoilportrait2.jpg"},
+        {"Img_name":"acrylicoilportrait/acrylicoilportrait1.jpg"},
+        {"Img_name":"acrylicoilportrait/acrylicoilportrait2.jpg"}
+    
+      ]
+    }
+    else if(paramname=="pencilsketchcharcoal"){
+      arr=[
+        {"Img_name":"pencilsketchcharcoal/pencilsketchcharcoal1.jpg"},
+        {"Img_name":"pencilsketchcharcoal/pencilsketchcharcoal2.jpg"},
+        {"Img_name":"pencilsketchcharcoal/pencilsketchcharcoal3.jpg"},       
+        {"Img_name":"pencilsketchcharcoal/pencilsketchcharcoal4.jpg"},       
+        {"Img_name":"pencilsketchcharcoal/pencilsketchcharcoal5.jpg"},       
+        {"Img_name":"pencilsketchcharcoal/pencilsketchcharcoal6.jpg"}      
+      ]
+    }
+    else if(paramname=="colourpencilpainting"){
+      arr=[
+        {"Img_name":"colourpencilpainting/colourpencilpainting1.jpg"},
+        {"Img_name":"colourpencilpainting/colourpencilpainting2.jpg"},
+        {"Img_name":"colourpencilpainting/colourpencilpainting3.jpg"},       
+        {"Img_name":"colourpencilpainting/colourpencilpainting4.jpg"},       
+        {"Img_name":"colourpencilpainting/colourpencilpainting5.jpg"},       
+        {"Img_name":"colourpencilpainting/colourpencilpainting6.jpg"},       
+        {"Img_name":"colourpencilpainting/colourpencilpainting7.jpg"},       
+        {"Img_name":"colourpencilpainting/colourpencilpainting8.jpg?v=1.1"},  
+        {"Img_name":"colourpencilpainting/colourpencilpainting9.jpg?v=1.1"}     
+      ]
+    }
+    else if(paramname=="colorpainting"){
+      arr=[
+        {"Img_name":"colorpainting/colorpainting1.jpg"},
+        {"Img_name":"colorpainting/colorpainting2.jpg"},
+        
+        {"Img_name":"colorpainting/colorpainting4.jpg"},
+        {"Img_name":"colorpainting/colorpainting5.jpg"},
+        {"Img_name":"colorpainting/colorpainting6.jpg"},
+        {"Img_name":"colorpainting/colorpainting7.jpg"},
+   
+        {"Img_name":"colorpainting/colorpainting9.jpg"},
+        {"Img_name":"colorpainting/colorpainting10.jpg"},
+        {"Img_name":"colorpainting/colorpainting11.jpg"},
+        {"Img_name":"colorpainting/colorpainting12.jpg"},
+        {"Img_name":"colorpainting/colorpainting13.jpg"},
+        {"Img_name":"colorpainting/colorpainting14.jpg"},
+        {"Img_name":"colorpainting/colorpainting15.jpg"},
+        {"Img_name":"colorpainting/colorpainting16.jpg?v=1.2"}
+      ]
+    }
+    else if(paramname=="digitalpainting"){
+      arr=[
+        {"Img_name":"digitalpainting/digitalpainting1.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting2.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting3.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting4.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting4_1.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting5.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting6.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting7.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting8.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting9.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting10.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting11.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting12.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting13.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting14.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting15.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting16.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting17.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting18.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting19.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting20.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting21.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting22.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting23.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting24.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting25.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting26.jpg"},
+        {"Img_name":"digitalpainting/digitalpainting27.jpg"}
+      ]
+    }
+    else if(paramname=="fabricpainting"){
+      arr=[
+        {"Img_name":"fabricpainting/fabricpainting1.jpg"},
+        {"Img_name":"fabricpainting/fabricpainting2.jpg"},
+        {"Img_name":"fabricpainting/fabricpainting3.jpg"},
+        {"Img_name":"fabricpainting/fabricpainting4.jpg"},
+        {"Img_name":"fabricpainting/fabricpainting5.jpg"},
+        {"Img_name":"fabricpainting/fabricpainting6.jpg"},
+        {"Img_name":"fabricpainting/fabricpainting7.jpg"},
+        {"Img_name":"fabricpainting/fabricpainting8.jpg"},
+        {"Img_name":"fabricpainting/fabricpainting9.jpg"},
+        {"Img_name":"fabricpainting/fabricpainting10.jpg"},
+        {"Img_name":"fabricpainting/fabricpainting11.jpg"},
+        {"Img_name":"fabricpainting/fabricpainting12.jpg"},
+        {"Img_name":"fabricpainting/fabricpainting13.jpg"}
+      ]
+    }
+    else if(paramname=="illustration"){
+      arr=[
+        {"Img_name":"illustration/illustration1.jpg"},
+        {"Img_name":"illustration/illustration2.jpg"},
+        {"Img_name":"illustration/illustration3.jpg"},
+        {"Img_name":"illustration/illustration4.jpg"},
+        {"Img_name":"illustration/illustration5.jpg"},
+        {"Img_name":"illustration/illustration6.jpg"}
+      ]
+    }
+    else if(paramname=="wallpainting"){
+      arr=[
+        {"Img_name":"wallpainting/wallpainting1.jpg"},
+        {"Img_name":"wallpainting/wallpainting2.jpg"},
+        {"Img_name":"wallpainting/wallpainting3.jpg"},
+        {"Img_name":"wallpainting/wallpainting3_1.jpg"},
+        {"Img_name":"wallpainting/wallpainting3_2.jpg"},
+        {"Img_name":"wallpainting/wallpainting3_3.jpg"},
+        {"Img_name":"wallpainting/wallpainting4.jpg"},
+        {"Img_name":"wallpainting/wallpainting5.jpg"},
+        {"Img_name":"wallpainting/wallpainting6.jpg"},
+        {"Img_name":"wallpainting/wallpainting7.jpg"},
+        {"Img_name":"wallpainting/wallpainting8.jpg"},
+        {"Img_name":"wallpainting/wallpainting9.jpg"},
+        {"Img_name":"wallpainting/wallpainting10.jpg"},
+        {"Img_name":"wallpainting/wallpainting11.jpg"},
+        {"Img_name":"wallpainting/wallpainting12.jpg"},
+        {"Img_name":"wallpainting/wallpainting13.jpg"},
+        {"Img_name":"wallpainting/wallpainting14.jpg"},
+        {"Img_name":"wallpainting/wallpainting15.jpg"},
+        {"Img_name":"wallpainting/wallpainting16.jpg"},
+        {"Img_name":"wallpainting/wallpainting17.jpg"},
+        {"Img_name":"wallpainting/wallpainting18.jpg"},
+        {"Img_name":"wallpainting/wallpainting19.jpg"},
+        {"Img_name":"wallpainting/wallpainting20.jpg"},
+        {"Img_name":"wallpainting/wallpainting21.jpg"},
+        {"Img_name":"wallpainting/wallpainting22.jpg"},
+        {"Img_name":"wallpainting/wallpainting23.jpg"},
+        {"Img_name":"wallpainting/wallpainting24.jpg"},
+        {"Img_name":"wallpainting/wallpainting25.jpg"},
+        {"Img_name":"wallpainting/wallpainting26.jpg"},
+        {"Img_name":"wallpainting/wallpainting27.jpg"},
+        {"Img_name":"wallpainting/wallpainting28.jpg"},
+        {"Img_name":"wallpainting/wallpainting29.jpg"},
+        {"Img_name":"wallpainting/wallpainting30.jpg"}
+      ]
+    }
+    
+    return JSON.parse(JSON.stringify(arr));
+  }
+
 
 
   //===============PortraitImgs===================
